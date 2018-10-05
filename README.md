@@ -204,7 +204,7 @@ Use `IPV6_FLAG_HAS_MASK`, `IPV6_FLAG_HAS_PORT` in ignore_flags to ignore mask or
 IPv4 embed and IPv4 compatible addresses will be compared as equal if either `IPV6_FLAG_IPV4_EMBED` or `IPV6_FLAG_IPV4_COMPAT` flags are passed in `ignore_flags`.
 
 ```c
-int32_t IPV6_API_DECL(ipv6_compare) (
+ipv6_compare_t IPV6_API_DECL(ipv6_compare) (
     const ipv6_address_full_t* a,
     const ipv6_address_full_t* b,
     uint32_t ignore_flags);
